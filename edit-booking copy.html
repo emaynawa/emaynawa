@@ -9,15 +9,14 @@
 
 <link rel="stylesheet" href="assets/css/bootstrap.min.css">
 
-<link rel="stylesheet" href="assets/plugins/fontawesome/css/fontawesome.min.css">
 <link rel="stylesheet" href="assets/plugins/fontawesome/css/all.min.css">
+<link rel="stylesheet" href="assets/plugins/fontawesome/css/fontawesome.min.css">
 
 <link rel="stylesheet" href="assets/css/feathericon.min.css">
 <link rel="stylesheet" href="assets/plugins/morris/morris.css">
 <link rel="stylesheet" type="text/css" href="assets/css/bootstrap-datetimepicker.min.css">
 
 <link rel="stylesheet" href="assets/css/style.css">
-
 </head>
 <body>
 
@@ -156,43 +155,18 @@ MacBook Pro</span></p>
 <div class="sidebar" id="sidebar">
 <div class="sidebar-inner slimscroll">
 <div id="sidebar-menu" class="sidebar-menu">
-<ul>
-<li>
-<a href="index.html"><i class="fe fe-home"></i> <span>Back to Home</span></a>
-</li>
-<li>
-<a href="settings.html"><i class="fe fe-vector"></i> <span>Company Settings</span></a>
-</li>
-<li>
-<a href="localization.html"><i class="fe fe-vector"></i> <span>Localization</span></a>
-</li>
-<li class="active">
-<a href="theme-settings.html"><i class="fe fe-warning"></i> <span>Theme Settings</span></a>
-</li>
-<li>
-<a href="roles-permissions.html"><i class="fe fe-vector"></i> <span>Roles &
-Permissions</span></a>
-</li>
-<li>
-<a href="email-settings.html"><i class="fe fe-warning"></i> <span>Email Settings</span></a>
-</li>
-<li>
-<a href="invoice-settings.html"><i class="fe fe-vector"></i> <span>Invoice
-Settings</span></a>
-</li>
-<li>
-<a href="salary-settings.html"><i class="fe fe-vector"></i> <span>Salary Settings</span></a>
-</li>
-<li>
-<a href="notifications-settings.html"><i class="fe fe-warning"></i> <span>Notifications</span></a>
-</li>
-<li>
-<a href="change-password.html"><i class="fe fe-vector"></i> <span>Change Password</span></a>
-</li>
-<li>
-<a href="leave-type.html"><i class="fe fe-warning"></i> <span>Leave Type</span></a>
-</li>
-</ul>
+	<ul>
+		<li class="active"> <a href="index.html"><i class="fas fa-tachometer-alt"></i> <span>Dashboard</span></a> </li>
+		<li class="list-divider"></li>
+		<li class="submenu"> <a href="localization.html"><i class="fas fa-location-arrow"></i> <span> Lokasi </span> <span class="menu-arrow"></span></a>
+			<ul class="submenu_class" style="display: none;">
+				<li><a href="all-booking.html"> Kecamatan Lasalimu</a></li>
+				<li><a href="edit-booking.html"> Kecamatan Lasalimu Sektor</a></li>
+			</ul>
+		</li>
+		<li><a href="form-basic-inputs.html"><i class="fas fa-file-archive"></i> <span> Dokumen Penunjang </span> <span class="menu-arrow"></span></a>
+		</li>
+	</ul>
 </div>
 </div>
 </div>
@@ -203,7 +177,7 @@ Settings</span></a>
 <div class="page-header">
 <div class="row align-items-center">
 <div class="col">
-<h3 class="page-title mt-5">Theme Settings</h3>
+<h3 class="page-title mt-5">Edit Booking</h3>
 </div>
 </div>
 </div>
@@ -213,31 +187,94 @@ Settings</span></a>
 <div class="row formtype">
 <div class="col-md-4">
 <div class="form-group">
-<label>Website Name</label>
-<input class="form-control" type="text" value="HOTEL-Admin">
+<label>Booking ID</label>
+<input class="form-control" type="text" value="BKG-0001">
 </div>
 </div>
 <div class="col-md-4">
 <div class="form-group">
-<label>Website Name</label>
-<input class="form-control" type="text" value="HOTEL-Admin">
+<label>Name</label>
+<select class="form-control" id="sel1" name="sellist1">
+<option>Select</option>
+<option>Jennifer Robinson</option>
+<option>Terry Baker</option>
+</select>
 </div>
 </div>
 <div class="col-md-4">
 <div class="form-group">
-<label>Website Name</label>
-<input class="form-control" type="text" value="HOTEL-Admin">
+<label>Room Type</label>
+<select class="form-control" id="sel2" name="sellist1">
+<option>Select</option>
+<option>Single</option>
+<option>Double</option>
+<option>Quad</option>
+<option>King</option>
+<option>Suite</option>
+<option>Villa</option>
+</select>
 </div>
 </div>
 <div class="col-md-4">
 <div class="form-group">
-<label>Website Name</label>
-<input class="form-control" type="text" value="HOTEL-Admin">
+<label>Total Members</label>
+<select class="form-control" id="sel3" name="sellist1">
+<option>Select</option>
+<option>1</option>
+<option>2</option>
+<option>3</option>
+<option>4</option>
+<option>5</option>
+</select>
+</div>
+</div>
+<div class="col-md-4">
+ <div class="form-group">
+<label>Date</label>
+<div class="cal-icon">
+<input type="text" class="form-control datetimepicker">
+</div>
 </div>
 </div>
 <div class="col-md-4">
 <div class="form-group">
-<label>Light Logo</label>
+<label>Time</label>
+<div class="time-icon">
+<input type="text" class="form-control" id="datetimepicker3">
+</div>
+</div>
+</div>
+<div class="col-md-4">
+<div class="form-group">
+<label>Arrival Date</label>
+<div class="cal-icon">
+<input type="text" class="form-control datetimepicker">
+</div>
+</div>
+</div>
+<div class="col-md-4">
+<div class="form-group">
+<label>Depature Date</label>
+<div class="cal-icon">
+<input type="text" class="form-control datetimepicker">
+</div>
+</div>
+</div>
+<div class="col-md-4">
+<div class="form-group">
+<label>Email ID</label>
+<input type="text" class="form-control" id="usr">
+</div>
+</div>
+<div class="col-md-4">
+<div class="form-group">
+<label>Phone Number</label>
+<input type="text" class="form-control" id="usr1">
+</div>
+</div>
+<div class="col-md-4">
+<div class="form-group">
+<label>File Upload</label>
 <div class="custom-file mb-3">
 <input type="file" class="custom-file-input" id="customFile" name="filename">
 <label class="custom-file-label" for="customFile">Choose file</label>
@@ -246,18 +283,15 @@ Settings</span></a>
 </div>
 <div class="col-md-4">
 <div class="form-group">
-<label>Favicon</label>
-<div class="custom-file mb-3">
-<input type="file" class="custom-file-input" id="customFile1" name="filename">
-<label class="custom-file-label" for="customFile">Choose file</label>
-</div>
+<label>Message</label>
+<textarea class="form-control" rows="5" id="comment" name="text"></textarea>
 </div>
 </div>
 </div>
 </form>
 </div>
 </div>
-<button type="button" class="btn btn-primary buttonedit mt-5">Save</button>
+<button type="button" class="btn btn-primary buttonedit">Save</button>
 </div>
 </div>
 
@@ -268,9 +302,10 @@ Settings</span></a>
 
 <script src="assets/js/popper.min.js"></script>
 <script src="assets/js/bootstrap.min.js"></script>
-<script src="assets/js/moment.min.js"></script>
 
 <script src="assets/plugins/slimscroll/jquery.slimscroll.min.js"></script>
+<script src="assets/plugins/raphael/raphael.min.js"></script>
+<script src="assets/js/moment.min.js"></script>
 <script src="assets/js/bootstrap-datetimepicker.min.js"></script>
 
 <script src="assets/js/script.js"></script>
