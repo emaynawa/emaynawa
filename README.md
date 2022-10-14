@@ -1,3 +1,3 @@
-# Website E-MAYNAWA SENTOSA
+# Website E-MAYNAWA
 
-Visit: https://febinurfajar19.github.io/febinurfajar.github.io/
+Visit: https://febinurfajar19.github.io/e-maynawa/
